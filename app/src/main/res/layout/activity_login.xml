@@ -2,68 +2,80 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#fffddd"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.dev.skillconnect.Login">
+
+    <ImageView
+        android:id="@+id/myImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg2" />
 
     <com.makeramen.roundedimageview.RoundedImageView
         android:id="@+id/roundedImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/textInputLayout"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="41dp"
+        android:layout_marginTop="40dp"
         android:src="@drawable/logo" />
-
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/roundedImageView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="44dp"
-        android:hint="Username"
-        android:textColorHint="@color/colorAccent"
-        android:inputType="textPassword"
-        android:maxLength="50" />
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:textColorHint="@color/colorAccent"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_alignStart="@+id/editText2"
-        android:layout_below="@+id/editText2"
-        android:layout_marginTop="17dp"
-        android:hint="Password"
-        android:maxLength="20">
-        <requestFocus />
-    </EditText>
+        android:layout_marginTop="10dp"
+        android:id="@+id/textInputLayout" />
 
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/editText2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignStart="@+id/editText1"
+        android:layout_below="@+id/roundedImageView"
+        android:layout_marginTop="52dp"
+        android:hint="Username"
+        app:backgroundTint="#FAFAFA"
+        android:inputType="textPassword"
+        android:textColorHint="#795548"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/editText1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:hint="Password"
+        android:textColorHint="#795548"
+        android:textStyle="bold"
+        app:backgroundTint="#FAFAFA">
+    </android.support.v7.widget.AppCompatEditText>
     <TextView
         android:id="@+id/text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/editText1"
-        android:layout_alignRight="@+id/editText1"
-        android:layout_alignTop="@+id/editText1"
-        android:layout_marginTop="57dp"
+        android:layout_alignLeft="@+id/roundedImageView"
+        android:layout_alignStart="@+id/roundedImageView"
+        android:layout_below="@+id/editText1"
+        android:layout_marginTop="13dp"
+        android:gravity="right"
+        android:textColor="#795548"
         android:text="Forgot Password "
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="300dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/text_view"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/shape"
         android:layout_marginTop="14dp"
+        android:background="#ffff"
         android:onClick="login"
         android:text="Login" />
 
@@ -78,10 +90,10 @@
         android:layout_marginBottom="10dp">
 
         <View
-        android:layout_width="100dp"
-        android:layout_height="5dp"
+            android:layout_width="100dp"
+            android:layout_height="5dp"
             android:id="@+id/LeftLine"
-        android:background="@color/colorAccent">
+            android:background="#ffff">
         </View>
         <TextView
             android:layout_width="wrap_content"
@@ -89,13 +101,13 @@
             android:id="@+id/forgotpass"
             android:text=" OR CONNECT WITH "
             android:textStyle="bold"
-            android:textColor="#000000"
+            android:textColor="#795548"
             />
         <View
             android:layout_width="100dp"
             android:layout_height="5dp"
             android:id="@+id/RightLine"
-            android:background="@color/colorAccent">
+            android:background="#ffff">
         </View>
 
     </LinearLayout>
@@ -110,37 +122,54 @@
         android:layout_below="@+id/linearLayout"
         android:gravity="center">
 
-        <Button
-            android:layout_width="110dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:elevation="20dp"
-            android:textStyle="bold" />
-
-        <com.google.android.gms.common.SignInButton
-            android:id="@+id/google_sign_in"
+        <br.com.bloder.magic.view.MagicButton
             android:layout_width="100dp"
-            android:layout_height="40dp"
+            android:layout_height="30dp"
             android:layout_weight="1"
-            android:textStyle="bold" />
+            android:layout_marginLeft="20dp"
+            app:magic_button_size="100dp"
+            app:button_icon="@drawable/fb"
+            app:icon_button_color="#564fac"
+            app:button_icon_height="30dp"
+            app:button_icon_width="75dp" />
 
-        <Button
-            android:layout_width="110dp"
-            android:layout_height="40dp"
+        <br.com.bloder.magic.view.MagicButton
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
             android:layout_weight="1"
-            android:textStyle="bold" />
+            app:button_icon="@drawable/google"
+            app:button_icon_height="30dp"
+            app:button_icon_width="75dp"
+            app:icon_button_color="#ffffff"
+            app:magic_button_size="100dp" />
+
+        <br.com.bloder.magic.view.MagicButton
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            app:magic_button_size="100dp"
+            app:button_icon="@drawable/linkedin"
+            app:icon_button_color="#ffffff"
+            app:button_icon_height="30dp"
+            app:button_icon_width="75dp" />
     </LinearLayout>
 
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="Create New Account"
         android:id="@+id/newAcc_text"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:paddingTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/btn_layouts"
-        android:layout_margin="10dp"
-        android:onClick="newregistration"/>
-
-
+        android:onClick="newregistration"
+        android:text="Create New Account"
+        android:textColor="#795548"
+        android:textStyle="bold" />
 
 </RelativeLayout>

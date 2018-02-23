@@ -4,8 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ImageView;
 
 public class Login extends AppCompatActivity {
 
@@ -13,8 +15,8 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-            TextView forgotpass = (TextView)findViewById(R.id.forgotpass);
-            forgotpass.setOnClickListener(new View.OnClickListener() {
+            TextView forgot = (TextView)findViewById(R.id.text_view);
+            forgot.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Toast.makeText(Login.this, "Forgot password", Toast.LENGTH_SHORT).show();

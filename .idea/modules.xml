@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Skill-Connect.iml" filepath="$PROJECT_DIR$/.idea/modules/Skill-Connect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Skill-Connect.iml" filepath="$PROJECT_DIR$/Skill-Connect.iml" />
+      <module fileurl="file://C:\Users\Tanya\Documents\GitHub\Skill-Connect\.idea\modules\Skill-Connect.iml" filepath="C:\Users\Tanya\Documents\GitHub\Skill-Connect\.idea\modules\Skill-Connect.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Tanya\Documents\GitHub\Skill-Connect\app\app.iml" filepath="C:\Users\Tanya\Documents\GitHub\Skill-Connect\app\app.iml" />
     </modules>
   </component>
 </project>

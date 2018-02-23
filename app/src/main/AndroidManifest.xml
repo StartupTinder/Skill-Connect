@@ -24,7 +24,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".SecondPage" />
-        <activity android:name=".Registration"></activity>
+        <activity android:name=".Registration" />
+        <activity android:name=".User_Profile"></activity>
     </application>
 
 </manifest>

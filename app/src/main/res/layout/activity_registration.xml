@@ -153,7 +153,7 @@
                 android:id="@+id/input_nameof"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Name of ">
+                android:hint="Name of Organisation ">
 
             </EditText>
         </android.support.design.widget.TextInputLayout>

@@ -4,13 +4,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ImageView;
 
 public class Login extends AppCompatActivity {
-
+   Button swipe = (Button)findViewById(R.id.swipepages);
         @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,8 +31,10 @@ public class Login extends AppCompatActivity {
         Intent in = new Intent(this, SecondPage.class);
         startActivity(in);
     }
-
-
+  public void swipe(View view)
+  {   Intent in = new Intent(this, Swipe_Page.class);
+      startActivity(in);  }
+//
     public void newregistration(View view) {
 
         Intent intent = new Intent(this , Registration.class);

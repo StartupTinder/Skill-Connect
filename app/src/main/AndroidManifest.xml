@@ -26,7 +26,7 @@
         <activity android:name=".SecondPage" />
         <activity android:name=".Registration" />
         <activity android:name=".User_Profile" />
-        <activity android:name=".Swipe_Page"></activity>
+        <activity android:name=".Swipe_Page" />
     </application>
 
 </manifest>

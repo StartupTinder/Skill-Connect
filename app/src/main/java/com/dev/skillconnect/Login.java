@@ -11,7 +11,7 @@ import android.widget.Toast;
 import android.widget.ImageView;
 
 public class Login extends AppCompatActivity {
-   Button swipe = (Button)findViewById(R.id.swipepages);
+  // Button swipe = (Button)findViewById(R.id.swipepages);
         @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -12,7 +12,6 @@
         android:onClick="swipe"
         android:text="checking"/>
 
-
     <ImageView
         android:id="@+id/myImage"
         android:layout_width="match_parent"

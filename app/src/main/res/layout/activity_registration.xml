@@ -11,10 +11,33 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-
-
         <!-- Name -->
 
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/reg_user_profile"
+            android:layout_gravity="center"
+            android:layout_margin="20dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:src="@drawable/plus_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Profile Picture"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+        </LinearLayout>
         <LinearLayout
             android:id="@+id/name_layout"
             android:layout_width="match_parent"
@@ -22,7 +45,7 @@
             android:layout_below="@+id/reg_logo"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="0dp"
             android:orientation="horizontal">
 
             <android.support.design.widget.TextInputLayout
@@ -61,14 +84,50 @@
 
 
             <EditText
-                android:id="@+id/input_username"
+                android:id="@+id/input_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/name_layout"
-                android:layout_margin="10dp"
-                android:hint="Username" />
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Email"
+                android:inputType="textEmailAddress"/>
         </android.support.design.widget.TextInputLayout>
 
+        <!-- mobile number -->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile Number"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:inputType="number" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Username-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+        </android.support.design.widget.TextInputLayout>
 
         <!-- Password -->
         <android.support.design.widget.TextInputLayout
@@ -80,11 +139,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/name_layout"
-                android:layout_margin="10dp"
                 android:hint="Password"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
         </android.support.design.widget.TextInputLayout>
-
 
         <!-- Re-enter Password -->
         <android.support.design.widget.TextInputLayout
@@ -97,102 +158,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/name_layout"
-                android:layout_margin="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
                 android:hint="Re-enter Password"
                 android:inputType="textPassword" />
         </android.support.design.widget.TextInputLayout>
 
-
-        <!--  Email  -->
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/input_email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Email"
-                android:inputType="textEmailAddress" />
-        </android.support.design.widget.TextInputLayout>
-
-
-        <!-- mobile number -->
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/input_mobile"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Mobile Number"
-                android:inputType="number" />
-        </android.support.design.widget.TextInputLayout>
-
-        <!-- First Position -->
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/input_firstpos"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="First Position ">
-
-            </EditText>
-        </android.support.design.widget.TextInputLayout>
-
-        <!-- Name of -->
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/input_nameof"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Name of Organisation ">
-
-            </EditText>
-        </android.support.design.widget.TextInputLayout>
-
-
-        <!-- Paying Capacity -->
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/input_pay"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Paying Capacity"
-                />
-        </android.support.design.widget.TextInputLayout>
-
-        <!-- No of employees-->
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <EditText
-                android:id="@+id/input_noofemp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="No of Employees" />
-        </android.support.design.widget.TextInputLayout>
-
-        <TextView
+        <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Already have an account  ? Login"
+            android:text="Register"
             android:onClick="LoginIntent"
             android:textSize="22dp"
             android:layout_margin="20dp"
             android:gravity="center"/>
     </LinearLayout>
-
 
 </ScrollView>

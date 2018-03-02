@@ -8,21 +8,13 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#1A9FCC"
         tools:context="com.dev.skillconnect.Login">
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/swipepages"
             android:text="checking"/>
-
-        <ImageView
-            android:id="@+id/myImage"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="false"
-            android:layout_alignParentTop="true"
-            android:background="@drawable/bg2" />
 
         <com.makeramen.roundedimageview.RoundedImageView
             android:id="@+id/roundedImageView"
@@ -47,9 +39,9 @@
             android:layout_below="@+id/roundedImageView"
             android:layout_marginTop="52dp"
             android:hint="Username"
-            app:backgroundTint="#FAFAFA"
+            app:backgroundTint="#4BF29E"
             android:inputType="textPassword"
-            android:textColorHint="#795548"
+            android:textColorHint="#ffffff"
             android:textStyle="bold" />
 
         <android.support.v7.widget.AppCompatEditText
@@ -60,9 +52,9 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="12dp"
             android:hint="Password"
-            android:textColorHint="#795548"
+            android:textColorHint="#ffffff"
             android:textStyle="bold"
-            app:backgroundTint="#FAFAFA">
+            app:backgroundTint="#4BF29E">
         </android.support.v7.widget.AppCompatEditText>
         <TextView
             android:id="@+id/text_view"
@@ -73,7 +65,7 @@
             android:layout_below="@+id/editText1"
             android:layout_marginTop="13dp"
             android:gravity="right"
-            android:textColor="#795548"
+            android:textColor="#ffffff"
             android:text="Forgot Password "
             android:textStyle="bold" />
 
@@ -84,8 +76,10 @@
             android:layout_below="@+id/text_view"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="14dp"
-            android:background="#ffff"
-            android:text="Login" />
+            android:background="#4BF29E"
+            android:text="Login"
+            android:textStyle="bold"
+            android:textColor="#ffffff"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -101,7 +95,7 @@
                 android:layout_width="100dp"
                 android:layout_height="5dp"
                 android:id="@+id/LeftLine"
-                android:background="#ffff">
+                android:background="#4BF29E">
             </View>
             <TextView
                 android:layout_width="wrap_content"
@@ -109,13 +103,13 @@
                 android:id="@+id/forgotpass"
                 android:text=" OR CONNECT WITH "
                 android:textStyle="bold"
-                android:textColor="#795548"
+                android:textColor="#ffffff"
                 />
             <View
                 android:layout_width="100dp"
                 android:layout_height="5dp"
                 android:id="@+id/RightLine"
-                android:background="#ffff">
+                android:background="#4BF29E">
             </View>
 
         </LinearLayout>
@@ -176,7 +170,7 @@
             android:layout_alignParentStart="true"
             android:layout_below="@+id/btn_layouts"
             android:text="Create New Account"
-            android:textColor="#795548"
+            android:textColor="#ffffff"
             android:textStyle="bold" />
 
     </RelativeLayout>

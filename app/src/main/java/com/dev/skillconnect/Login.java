@@ -1,58 +1,38 @@
 package com.dev.skillconnect;
 
+import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.FrameLayout;
 
-public class Login extends AppCompatActivity {
-  FrameLayout simpleFrameLayout;
+public class Login extends AppCompatActivity  {
     TabLayout tabLayout;
-        @Override
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-            simpleFrameLayout = (FrameLayout) findViewById(R.id.simpleFrameLayout);
-            tabLayout = (TabLayout) findViewById(R.id.simpleTabLayout);
-// Create a new Tab named "LOGIN"
-            TabLayout.Tab firstTab = tabLayout.newTab();
-            firstTab.setText("LOGIN"); // set the Text for the first Tab
-            tabLayout.addTab(firstTab); // add  the tab at in the TabLayout
-// Create a new Tab named "REGISTER"
-            TabLayout.Tab secondTab = tabLayout.newTab();
-            secondTab.setText("REGISTER"); // set the Text for the second Tab
-            tabLayout.addTab(secondTab);
-            tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-                @Override
-                public void onTabSelected(TabLayout.Tab tab) {
-// get the current selected tab's position and replace the fragment accordingly
-                    android.support.v4.app.Fragment fragment = null;
-                    switch (tab.getPosition()) {
-                        case 0:
-                            fragment = new User_login();
-                            break;
-                        case 1:
-                            fragment = new Register();
-                            break;
-                    }
-                    FragmentManager fm = getSupportFragmentManager();
-                    FragmentTransaction ft = fm.beginTransaction();
-                    ft.replace(R.id.simpleFrameLayout, fragment);
-                    ft.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-                    ft.commit();
-                }
+        setContentView(R.layout.activity_main);
 
-                @Override
-                public void onTabUnselected(TabLayout.Tab tab) {
+        // Find the view pager that will allow the user to swipe between fragments
+        ViewPager viewPager = (ViewPager) findViewById(R.id.simpleViewPager);
 
-                }
+        // Create an adapter that knows which fragment should be shown on each page
+      ViewAdapter adapter = new ViewAdapter(this, getSupportFragmentManager());
 
-                @Override
-                public void onTabReselected(TabLayout.Tab tab) {
+        // Set the adapter onto the view pager
+        viewPager.setAdapter(adapter);
 
-                }
-            });
-        }
+        // Give the TabLayout the ViewPager
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
+        tabLayout.setupWithViewPager(viewPager);
+    }
 }

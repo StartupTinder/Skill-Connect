@@ -4,27 +4,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/zinc"
     tools:context=".MainActivity">
 
-
-<android.support.v7.widget.CardView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="50dp"
-    android:elevation="25dp"
-    android:background="@drawable/b_one"
-    >
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-    <android.support.design.widget.TabLayout
-        android:id="@+id/sliding_tabs"
-        android:background="#000080"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:tabMode="fixed" />
+        android:orientation="vertical">
+
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/sliding_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        app:tabSelectedTextColor="@color/widgetcolors"
+        android:layout_marginRight="50dp"
+        app:tabIndicatorHeight="3dp"
+        app:tabIndicatorColor="@color/widgetcolors"/>
 
 
     <android.support.v4.view.ViewPager
@@ -34,5 +32,4 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         />
     </LinearLayout>
-</android.support.v7.widget.CardView>
 </LinearLayout>

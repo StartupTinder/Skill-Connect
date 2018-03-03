@@ -13,23 +13,26 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_account_circle_white_24dp"/>
 
             <!-- Name -->
 
-            <com.makeramen.roundedimageview.RoundedImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:src="@drawable/reg_user_profile"
-                android:layout_gravity="center"
-                android:layout_margin="20dp" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center">
+
                 <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:background="@color/white"
                     android:src="@drawable/plus_icon" />
 
@@ -61,6 +64,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
+                        android:backgroundTint="@color/widgetcolors"
                         android:hint="First Name" />
                 </android.support.design.widget.TextInputLayout>
 

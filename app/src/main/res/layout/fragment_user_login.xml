@@ -167,6 +167,12 @@
                     app:button_icon_width="75dp"
                     app:icon_button_color="#ffffff"
                     app:magic_button_size="100dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/check"/>
+
             </LinearLayout>
 
         </LinearLayout>

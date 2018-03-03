@@ -35,7 +35,7 @@
     <View
         android:layout_width="142dp"
         android:layout_height="2dp"
-        android:background="#ff72dd"
+        android:background="@color/widgetcolors"
         android:layout_marginTop="80dp"></View>
         <com.makeramen.roundedimageview.RoundedImageView
             android:layout_width="100dp"
@@ -45,7 +45,7 @@
         <View
             android:layout_width="142dp"
             android:layout_height="2dp"
-            android:background="#ff72dd"
+            android:background="@color/widgetcolors"
             android:layout_marginTop="80dp"></View>
     </LinearLayout>
     <TextView

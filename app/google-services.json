@@ -1,35 +1,35 @@
 {
   "project_info": {
-    "project_number": "384652086263",
-    "firebase_url": "https://skill-connect-e779d.firebaseio.com",
-    "project_id": "skill-connect-e779d",
-    "storage_bucket": "skill-connect-e779d.appspot.com"
+    "project_number": "483637005844",
+    "firebase_url": "https://skill-connect-b89c1.firebaseio.com",
+    "project_id": "skill-connect-b89c1",
+    "storage_bucket": "skill-connect-b89c1.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:384652086263:android:16f53fba15a907c7",
+        "mobilesdk_app_id": "1:483637005844:android:16f53fba15a907c7",
         "android_client_info": {
           "package_name": "com.dev.skillconnect"
         }
       },
       "oauth_client": [
         {
-          "client_id": "384652086263-7vij8l4mn1k54fs48shlcoci16j28g4g.apps.googleusercontent.com",
+          "client_id": "483637005844-ng9ef34opu22ann8cmfbhmdpjr1etqt2.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.dev.skillconnect",
-            "certificate_hash": "25f01d7cc1045de2435586a999c2f07389cb1cfd"
+            "certificate_hash": "9734ffeaf4eaf04ba7b0cf13b545fffd1db47495"
           }
         },
         {
-          "client_id": "384652086263-c2j5pk5jumrpleqqk0ekurllb3dv0j93.apps.googleusercontent.com",
+          "client_id": "483637005844-igcej78i839uk7su6ribbod4o95h91c8.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDOYPht0Pc_1FNRvax-9tLIKmHuKCm0gpo"
+          "current_key": "AIzaSyBjafQNgvOK1hBHGYhisLpACklluYoAnJg"
         }
       ],
       "services": {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "384652086263-c2j5pk5jumrpleqqk0ekurllb3dv0j93.apps.googleusercontent.com",
+              "client_id": "483637005844-igcej78i839uk7su6ribbod4o95h91c8.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

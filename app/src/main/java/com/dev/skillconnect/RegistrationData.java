@@ -5,22 +5,20 @@ package com.dev.skillconnect;
  */
 
 public class RegistrationData {
-    String Fname, Lname, email, mobile, username, password;
-
     public String getFname() {
-        return Fname;
+        return fname;
     }
 
     public void setFname(String fname) {
-        Fname = fname;
+        this.fname = fname;
     }
 
     public String getLname() {
-        return Lname;
+        return lname;
     }
 
     public void setLname(String lname) {
-        Lname = lname;
+        this.lname = lname;
     }
 
     public String getEmail() {
@@ -55,12 +53,20 @@ public class RegistrationData {
         this.password = password;
     }
 
+    String fname;
+
     public RegistrationData(String fname, String lname, String email, String mobile, String username, String password) {
-        Fname = fname;
-        Lname = lname;
+        this.fname = fname;
+        this.lname = lname;
         this.email = email;
         this.mobile = mobile;
         this.username = username;
         this.password = password;
     }
+
+    String lname;
+    String email;
+    String mobile;
+    String username;
+    String password;
 }

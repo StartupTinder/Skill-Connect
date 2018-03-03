@@ -36,8 +36,11 @@ public class MeetUpAdapter extends RecyclerView.Adapter<MeetUpAdapter.ViewHolder
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
        holder.MeetUpData = getItem(position);
-        holder.cardtitle.setText(list.get(position).name);
-        holder.cardimage.setImageResource(list.get(position).id);
+        holder.name.setText(list.get(position).name);
+        holder.post.setText(list.get(position).post);
+        holder.interest.setText(list.get(position).interest);
+
+
     }
 
     @Override
@@ -55,15 +58,17 @@ public class MeetUpAdapter extends RecyclerView.Adapter<MeetUpAdapter.ViewHolder
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        ImageView cardimage;
-        TextView cardtitle;
+        TextView post;
+        TextView name;
+        TextView interest;
         MeetUpData meetUpData;
         public MeetUpData MeetUpData;
 
         public ViewHolder(View itemView) {
             super(itemView);
-            cardimage = (ImageView) itemView.findViewById(R.id.cardimage);
-            cardtitle = (TextView) itemView.findViewById(R.id.cardtitle);
+            name = (TextView) itemView.findViewById(R.id.name);
+            post = (TextView) itemView.findViewById(R.id.post);
+            interest =(TextView)itemView.findViewById(R.id.interest);
         }
     }
 }

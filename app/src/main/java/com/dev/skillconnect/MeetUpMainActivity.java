@@ -37,9 +37,9 @@ public class MeetUpMainActivity  extends AppCompatActivity{
     }
     private void initializeData() {
         companies = new ArrayList<>();
-        companies.add(new MeetUpData("Company1", R.drawable.google));
-        companies.add(new MeetUpData("Company2", R.drawable.fb));
-        companies.add(new MeetUpData("Company3", R.drawable.linkedin));
+        companies.add(new MeetUpData("Srishti","Manager","ii"));
+        companies.add(new MeetUpData("Srishti","Manager","ii"));
+        companies.add(new MeetUpData("Srishti","Manager","ii"));
 
     }
     @Override

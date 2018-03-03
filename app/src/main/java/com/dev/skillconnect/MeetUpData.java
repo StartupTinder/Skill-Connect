@@ -6,21 +6,40 @@ package com.dev.skillconnect;
 
 public class MeetUpData {
     String name;
-    int id;
+    String post;
+    String interest;
+
+
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
-    public int getId() {
-        return id;
+    public String getPost() {
+        return post;
+
     }
-    public void setId(int id) {
-        this.id = id;
+
+    public void setPost(String post) {
+        this.post= post;
     }
-    public MeetUpData(String name, int id) {
+    public String getInterest() {
+        return interest;
+    }
+
+    public void setInterest(String interest) {
+        this.interest = interest;
+    }
+
+
+
+
+    public MeetUpData(String name, String post, String interest) {
         this.name = name;
-        this.id = id;
+        this.post = post;
+        this.interest = interest;
+
     }
 }

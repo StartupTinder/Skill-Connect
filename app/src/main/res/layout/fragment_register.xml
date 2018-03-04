@@ -56,9 +56,11 @@
                     android:id="@+id/input_firstName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/username"
+                    android:drawablePadding="10dp"
                     android:layout_marginLeft="20dp"
-                    android:hint="First Name"
-                    android:backgroundTint="@color/widgetcolors"/>
+                    android:backgroundTint="@color/widgetcolors"
+                    android:hint="First Name" />
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -69,7 +71,7 @@
                 <EditText
                     android:id="@+id/input_lastName"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="56dp"
                     android:layout_marginRight="20dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/widgetcolors"
@@ -93,6 +95,8 @@
                 android:layout_marginRight="40dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="10dp"
                 android:backgroundTint="@color/widgetcolors"
                 android:hint="Email"
                 android:inputType="textEmailAddress"/>
@@ -109,8 +113,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="40dp"
+                android:drawableLeft="@drawable/phoneicon"
+                android:drawablePadding="10dp"
                 android:layout_marginRight="40dp"
                 android:layout_marginTop="10dp"
+                android:textCursorDrawable="@color/widgetcolors"
                 android:backgroundTint="@color/widgetcolors"
                 android:hint="Mobile Number"
                 android:inputType="number" />
@@ -129,6 +136,8 @@
                 android:backgroundTint="@color/widgetcolors"
                 android:layout_marginLeft="40dp"
                 android:layout_marginRight="40dp"
+                android:drawableLeft="@drawable/username"
+                android:drawablePadding="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"/>
         </android.support.design.widget.TextInputLayout>
@@ -149,6 +158,8 @@
                 android:layout_marginLeft="40dp"
                 android:layout_marginRight="40dp"
                 android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="10dp"
                 android:layout_marginBottom="10dp"/>
         </android.support.design.widget.TextInputLayout>
 
@@ -169,6 +180,8 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
                 android:hint="Re-enter Password"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="10dp"
                 android:inputType="textPassword" />
         </android.support.design.widget.TextInputLayout>
 
@@ -176,6 +189,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Register"
+            android:textColor="#ffffff"
             android:onClick="LoginIntent"
             android:textSize="22dp"
             android:backgroundTint="@color/widgetcolors"

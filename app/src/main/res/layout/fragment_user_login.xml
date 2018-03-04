@@ -45,8 +45,11 @@
                     android:layout_marginTop="22dp"
                     android:backgroundTint="@color/widgetcolors"
                     android:hint="Username"
+                    android:drawableLeft="@drawable/username"
+                    android:drawablePadding="10dp"
                     android:layout_marginBottom="10dp"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    />
 
                 <EditText
                     android:id="@+id/pwd_editext"
@@ -58,6 +61,8 @@
                     android:layout_gravity="center"
                     android:backgroundTint="@color/widgetcolors"
                     android:hint="Password"
+                    android:drawableLeft="@drawable/password"
+                    android:drawablePadding="10dp"
                     android:textStyle="bold">
 
                 </EditText>

@@ -1,4 +1,4 @@
-package com.dev.skillconnect;
+package com.yuyakaido.android.cardstackview;
 
 /**
  * Created by Admin on 03-03-2018.

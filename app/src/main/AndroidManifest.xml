@@ -26,7 +26,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>>
-        <activity android:name=".MeetUpMainActivity"/>
+        <activity android:name="com.yuyakaido.android.cardstackview.MeetUpMainActivity"/>
         <activity android:name=".SecondPage" />
         <activity android:name=".User_Profile" />
     </application>

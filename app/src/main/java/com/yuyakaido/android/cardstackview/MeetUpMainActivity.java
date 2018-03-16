@@ -67,6 +67,18 @@ public class MeetUpMainActivity extends AppCompatActivity {
                     Log.d("CardStackView", "Paginate: " + cardStackView.getTopIndex());
                     paginate();
                 }
+                if(direction==SwipeDirection.Left)
+                {  View coordinatorLayout =(View)findViewById(com.dev.skillconnect.R.id.v);
+                    Snackbar snackbar = Snackbar
+                            .make(coordinatorLayout,"Left swiped a card",Snackbar.LENGTH_LONG)
+                            .setAction("UNDO", new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    reverse();
+                                }
+                            });
+
+                    snackbar.show();}
             }
 
             @Override
@@ -145,17 +157,7 @@ public class MeetUpMainActivity extends AppCompatActivity {
         overlayAnimationSet.playTogether(overlayAnimator);
 
         cardStackView.swipe(SwipeDirection.Left, cardAnimationSet, overlayAnimationSet);
-        View coordinatorLayout =(View)findViewById(R.id.v);
-        Snackbar snackbar = Snackbar
-                .make(null,"Left swiped a card",Snackbar.LENGTH_LONG)
-                .setAction("UNDO", new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        reverse();
-                    }
-                });
 
-        snackbar.show();
     }
 
     public void swipeRight() {

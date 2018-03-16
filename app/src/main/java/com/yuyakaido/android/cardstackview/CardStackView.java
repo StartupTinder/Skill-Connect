@@ -265,6 +265,7 @@ public class CardStackView extends FrameLayout {
         boolean showOverlay;
         if (showOverlay = direction == SwipeDirection.Left) {
             getTopView().showLeftOverlay();
+
         } else if (showOverlay = direction == SwipeDirection.Right) {
             getTopView().showRightOverlay();
         } else if (showOverlay = direction == SwipeDirection.Bottom){

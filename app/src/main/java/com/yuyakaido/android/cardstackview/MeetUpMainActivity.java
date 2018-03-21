@@ -4,13 +4,17 @@ import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
 import android.animation.ValueAnimator;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ProgressBar;
+
+import com.dev.skillconnect.User_Profile;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -119,8 +123,6 @@ public class MeetUpMainActivity extends AppCompatActivity {
         }
         return data;
     }
-
-
 
     private void paginate() {
         cardStackView.setPaginationReserved();
